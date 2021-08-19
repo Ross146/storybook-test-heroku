@@ -13,5 +13,4 @@ jobs:
           heroku_api_key: "51d6669a-e29d-4d60-94f3-0f21d399f24b" # temporary key
           heroku_app_name: "checkify-storybook" #temporary. Must be unique in Heroku
           heroku_email: "padalk46@gmail.com" #temporary
-          branch: "master"
           appdir: "react-app"
