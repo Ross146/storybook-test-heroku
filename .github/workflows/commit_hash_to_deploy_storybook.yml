@@ -1,0 +1,17 @@
+# This workflow will push a commit hash of this repo, to remote repo
+name: Deploy storybook
+
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: "51d6669a-e29d-4d60-94f3-0f21d399f24b" # temporary key
+          heroku_app_name: "checkify-storybook" #temporary. Must be unique in Heroku
+          heroku_email: "padalk46@gmail.com" #temporary
+          branch: "master"
+          appdir: "react-app"
