@@ -14,3 +14,4 @@ jobs:
           heroku_app_name: "checkify-storybook" #temporary. Must be unique in Heroku
           heroku_email: "padalk46@gmail.com" #temporary
           appdir: "react-app"
+          usedocker: true
